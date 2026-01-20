@@ -13,16 +13,16 @@ const AUTO_ACCESS = process.env.AUTO_ACCESS || false; // false关闭自动保活
 const FILE_PATH = process.env.FILE_PATH || './tmp';   // 运行目录,sub节点文件保存目录
 const SUB_PATH = process.env.SUB_PATH || 'sub';       // 订阅路径
 const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;        // http服务订阅端口
-const UUID = process.env.UUID || 'e91eac5b-3754-32fd-825d-0cd9d8447afd'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
+const UUID = process.env.UUID || '048d8705-5db3-4996-879d-7dd59d2e5979'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
 const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nz.hbr.de5.net:443';        // 哪吒v1填写形式: nz.abc.com:8008  哪吒v0填写形式：nz.abc.com
 const NEZHA_PORT = process.env.NEZHA_PORT || '';            // 使用哪吒v1请留空，哪吒v0需填写
 const NEZHA_KEY = process.env.NEZHA_KEY || 'X0jFP62uSVePOw5v83giBe3WUULTseLF';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'a3.itds.ip-ddns.com';          // 固定隧道域名,留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiMjNkNGY2MDU4ZmQwYTEyNmUzOTMxNTM1NjNhYWIxNjMiLCJ0IjoiYjczNTM0MDAtZDUzZC00NGFkLTg0ODItMjZhNzMwNWQ2MWMxIiwicyI6Ik5ETXdNVEZtT1dNdE4yRTFZeTAwWkRRNUxUZ3paakF0WVRObVpUQTNPVGN4TmpCaCJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
-const ARGO_PORT = process.env.ARGO_PORT || 10003;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
-const CFIP = process.env.CFIP || 'cdns.doon.eu.org';        // 节点优选域名或优选ip  
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'a.gsr.de5.net';          // 固定隧道域名,留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiZGQ4Y2YzMzc1ZmFiOTE1YmE0NGE1ODk3ZjRhZTEwNjkiLCJ0IjoiN2M3MzBlYjUtNThkMy00MmJjLWEzMDgtOWU5ZDlmZjg5OTRhIiwicyI6Ik56QmlOakpqWmpFdE1tWmpNUzAwT0RnMkxUZ3pNRFF0TjJNeVpUQmxOakJtTlRJeCJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
+const ARGO_PORT = process.env.ARGO_PORT || 8002;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
+const CFIP = process.env.CFIP || 'cu.877774.xyz';        // 节点优选域名或优选ip  
 const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
-const NAME = process.env.NAME || 'JP－Claw';                        // 节点名称
+const NAME = process.env.NAME || 'US－Claw';                        // 节点名称
 
 // 创建运行文件夹
 if (!fs.existsSync(FILE_PATH)) {
